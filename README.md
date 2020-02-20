@@ -15,7 +15,7 @@ Of course, portcos can and will differ — we expect the final call on everythin
 ----
 
 * Backend:
-  * Languaage: Python
+  * Language: Python
   * Framework: Django
 * Configuration Management: Ansible
 * Cloud Provider: AWS (but carefully consider GCP for more compliance-heavy situations)
@@ -53,4 +53,4 @@ Of course, portcos can and will differ — we expect the final call on everythin
   * arteria/django-background-tasks for prototypes/demos, where the added cost/complexity of a real job queue isn’t worth the effort.
 * Search:
   * Postgres full-text for commodity search
-  * ElasticSearch where search is a core component, or where Postgres fails
+  * Elasticsearch where search is a core component, or where Postgres fails
