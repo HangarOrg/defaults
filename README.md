@@ -57,3 +57,10 @@ Of course, portcos can and will differ — we expect the final call on everythin
 * Search:
   * Postgres full-text for commodity search
   * Elasticsearch where search is a core component, or where Postgres fails
+* Metrics:
+  * [Grafana](https://grafana.com/grafana/)
+  * [Prometheus](https://grafana.com/oss/prometheus/)
+* Paging:
+  * [PagerDuty](https://www.pagerduty.com/)
+* Error Tracking:
+  * [Sentry](https://sentry.io/welcome/)
