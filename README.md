@@ -15,7 +15,7 @@ Of course, portcos can and will differ — we expect the final call on everythin
 ----
 
 * Backend:
-  * Language: Python
+  * Language: Python (recommend 3.x, as 2.x is EOL)
   * Framework: Django
 * Configuration Management: Ansible
 * Cloud Provider: AWS (but carefully consider GCP for more compliance-heavy situations)
@@ -38,10 +38,13 @@ Of course, portcos can and will differ — we expect the final call on everythin
   * AWS Fargate after that.
   * Raw EC2 if nothing else works.
 * Frontend:
+  * HTML5
   * CSS: Tailwind
   * JavaScript:
+    * ES6 is recommended - https://kangax.github.io/compat-table/es6/
+    * [TypeScript](https://www.typescriptlang.org/) is also nice
     * no framework ("vanilla js") until that doesn't work
-    * Vue.js after that
+    * [Vue.js](https://vuejs.org/) or [Ractive.js](https://ractive.js.org/) after that
   * Asset management: Parcel
 * GIS:
   * Database: PostGIS
