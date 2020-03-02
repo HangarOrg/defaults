@@ -15,7 +15,7 @@ Of course, portcos can and will differ — we expect the final call on everythin
 ----
 
 * Backend:
-  * Language: Python (recommend 3.x, as 2.x is EOL)
+  * Language: Python 3.7+
   * Framework: Django
 * Configuration Management: Ansible
 * Cloud Provider: AWS (but carefully consider GCP for more compliance-heavy situations)
@@ -41,8 +41,7 @@ Of course, portcos can and will differ — we expect the final call on everythin
   * HTML5
   * CSS: Tailwind
   * JavaScript:
-    * ES6 is recommended - https://kangax.github.io/compat-table/es6/
-    * [TypeScript](https://www.typescriptlang.org/) is also nice
+    * Use ES6 if possible, and consider [TypeScript](https://www.typescriptlang.org/)
     * no framework ("vanilla js") until that doesn't work
     * [Vue.js](https://vuejs.org/) or [Ractive.js](https://ractive.js.org/) after that
   * Asset management: Parcel
@@ -50,6 +49,7 @@ Of course, portcos can and will differ — we expect the final call on everythin
   * Database: PostGIS
   * Backend framework: Django
   * Slippy maps: OpenLayers
+  * Data format: GeoJSON
 * Infrastructure Management: Terraform
 * Job queue:
   * Celery + Redis
