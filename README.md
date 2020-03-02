@@ -15,7 +15,7 @@ Of course, portcos can and will differ — we expect the final call on everythin
 ----
 
 * Backend:
-  * Language: Python
+  * Language: Python 3.7+
   * Framework: Django
 * Configuration Management: Ansible
 * Cloud Provider: AWS (but carefully consider GCP for more compliance-heavy situations)
@@ -38,10 +38,12 @@ Of course, portcos can and will differ — we expect the final call on everythin
   * AWS Fargate after that.
   * Raw EC2 if nothing else works.
 * Frontend:
+  * HTML5
   * CSS: Tailwind
   * JavaScript:
+    * Use ES6 if possible, and consider [TypeScript](https://www.typescriptlang.org/)
     * no framework ("vanilla js") until that doesn't work
-    * Vue.js after that
+    * [Vue.js](https://vuejs.org/) or [Ractive.js](https://ractive.js.org/) after that
   * Asset management: Parcel
 * GIS:
   * Database: PostGIS
@@ -54,4 +56,11 @@ Of course, portcos can and will differ — we expect the final call on everythin
   * arteria/django-background-tasks for prototypes/demos, where the added cost/complexity of a real job queue isn’t worth the effort.
 * Search:
   * Postgres full-text for commodity search
-  * ElasticSearch where search is a core component, or where Postgres fails
+  * Elasticsearch where search is a core component, or where Postgres fails
+* Metrics:
+  * [Grafana](https://grafana.com/grafana/)
+  * [Prometheus](https://grafana.com/oss/prometheus/)
+* Paging:
+  * [PagerDuty](https://www.pagerduty.com/)
+* Error Tracking:
+  * [Sentry](https://sentry.io/welcome/)
