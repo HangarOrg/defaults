@@ -39,11 +39,14 @@ Of course, portcos can and will differ — we expect the final call on everythin
   * Raw EC2 if nothing else works.
 * Frontend:
   * HTML5
-  * CSS: Tailwind
+  * CSS via SCSS: [Hangar Style Kit](https://github.com/HangarOrg/hangar-style-kit)
   * JavaScript:
-    * Use ES6 if possible, and consider [TypeScript](https://www.typescriptlang.org/)
-    * no framework ("vanilla js") until that doesn't work
-    * [Vue.js](https://vuejs.org/) or [Ractive.js](https://ractive.js.org/) after that
+    * Use ES6 with Babel to compile to ES6 for the browser
+    * Client side application with:
+      * [React](https://reactjs.org/) for the template/view layer
+      * [Redux](https://redux.js.org/) for managing data
+      * More details about front-end conventions [here](./JS.md).
+    * Authentication is on the server, via a cookie
   * Asset management: Parcel
 * GIS:
   * Database: PostGIS
